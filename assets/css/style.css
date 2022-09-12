@@ -134,6 +134,10 @@ a {
     display: inline-block;
 }
 
+.relative {
+    position: relative;
+}
+
  .d-flex {
     display: flex;
  }
@@ -154,8 +158,8 @@ a {
     justify-content: space-around;
  }
 
- .pb-2 {
-    padding-bottom: 2rem;
+ .pb-6 {
+    padding-bottom: 6rem;
  }
 
  .align-center {
@@ -172,7 +176,7 @@ a {
  /*#region buttons */
 
  .button a {
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     background-color: var(--var-blue);
     color: white;
  }
@@ -184,6 +188,12 @@ a {
 .button a:hover {
     opacity: 0.75;
     transition: opacity 0.3s ease;
+}
+
+
+.button.large a {
+    width: 100%;
+    text-align: center;
 }
  /*#endregion buttons */
 
@@ -213,15 +223,19 @@ a {
     background-color: var(--var-lightblue);
  }
 
+ .hero.relative {
+    bottom: -5.5rem;
+ }
+
  .title {
     font-size: 3rem;
     font-weight: 700;
-    padding: 3rem 0;
-    letter-spacing: 0.3rem;
+    padding-bottom: 3rem;
+   
  }
 
  .jumbo-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
  }
 
@@ -230,15 +244,81 @@ a {
     
  }
 
- .jumbo_img img {
-    max-width: 120%;
- }
-
 
 
 
  .arrow {
-    font-size: 4rem;
+    font-size: 3rem;
+ }
+
+
+
+ .subtitle.business {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+ }
+
+ .plan {
+    border: 1px solid black;
+    margin-right: 1rem;
+    
+ }
+
+ .user {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.5rem;
+    
+ }
+
+.content {
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+ .content > * {
+    padding: 1rem 0;
+ }
+.content h4 {
+    padding-top: 3rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+ 
+
+ .month {
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    color: grey;
+    
+ }
+
+ .content .button {
+    padding-top: 3rem;
+ }
+
+ .border-bottom, .border-bottom span {
+    padding: 2rem 0 3rem 0rem;
+ }
+
+
+ .border-bottom span {
+    border-bottom: 1px solid grey;
+ }
+
+ .border-bottom a {
+    margin-left: 0.5rem;
+    color: blue;
+    text-decoration: underline;
+ }
+
+ .fa-check {
+    padding-right: 0.3rem;
+    color: var(--var-blue);
+    font-weight: 800;
  }
 
 
@@ -251,6 +331,8 @@ a {
 .flex_center, .flex_start, .flex_end {
     width: calc(100%/3);
 }
+
+
 
 
 /* #endregion main */   
