@@ -37,19 +37,23 @@ a {
 
  }
 
- .hero {
+ .container {
     width: 80%;
     margin: auto;
     max-width: 1440px;
  }
 
- .container {
+ .container-sm {
     width: 60%;
     margin: auto;
     max-width: 1260px;
  }
 
- .container .row {
+ .container .row, .container-sm .row {
+    margin-bottom: 5rem;
+ }
+
+ .container-sm .row {
     padding: 1rem 0;
    
  }
@@ -113,6 +117,11 @@ a {
  }
 
 
+ .col-4.plan {
+    width: 30%;
+ }
+
+
  .col-8 {
     width: calc((100%/12)*8);
  }
@@ -170,31 +179,45 @@ a {
     flex-wrap: wrap;
  }
 
+ .text-center {
+    text-align: center;
+ }
+
 
  /* #endregion Utility */
 
  /*#region buttons */
 
- .button a {
+.button  a{
     padding: 0.8rem 1.2rem;
+}
+
+ .button.blue a {
     background-color: var(--var-blue);
     color: white;
  }
+.button.white a {
+    color: black;
+    border: 1px solid black;
+ }
+
  .button.small a {
     padding: 0.5rem 1rem;
 
 }
 
-.button a:hover {
+.button.large a {
+    width: 100%;
+    text-align: center;
+}
+
+.button.blue a:hover {
     opacity: 0.75;
     transition: opacity 0.3s ease;
 }
 
 
-.button.large a {
-    width: 100%;
-    text-align: center;
-}
+
  /*#endregion buttons */
 
  /* #region header */
@@ -223,7 +246,7 @@ a {
     background-color: var(--var-lightblue);
  }
 
- .hero.relative {
+ .row.relative {
     bottom: -5.5rem;
  }
 
@@ -260,11 +283,17 @@ a {
 
  .plan {
     border: 1px solid black;
-    margin-right: 1rem;
+    margin-bottom: 3rem;
+    
     
  }
 
- .user {
+ .plan i {
+    padding-right: 0.3rem;
+ }
+
+
+ .user{
     border-bottom: 1px solid black;
     text-align: center;
     padding: 0.5rem;
@@ -279,14 +308,11 @@ a {
  .content > * {
     padding: 1rem 0;
  }
-.content h4 {
+.highlights {
     padding-top: 3rem;
 }
 
-.content h3 {
-    font-size: 1.5rem;
-    font-weight: 900;
-}
+
  
 
  .month {
@@ -316,11 +342,39 @@ a {
  }
 
  .fa-check {
-    padding-right: 0.3rem;
     color: var(--var-blue);
     font-weight: 800;
  }
 
+ .col-12 .flex_left {
+    flex-basis: 80%;
+ }
+
+ .col-12 .flex_right {
+    flex-grow: 1;
+ }
+
+ .col-12.plan .content {
+    padding: 2rem;
+ }
+
+.flex_left h3 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.flex_right {
+    justify-content: flex-start;
+}
+
+.flex_right .button.large {
+    padding-top: 0;
+}
+
+
+.business > * {
+    padding: 2rem;
+}
 
  .flex_item {
     width: 50%;
