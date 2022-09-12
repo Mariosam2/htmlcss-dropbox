@@ -17,23 +17,28 @@
  .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem 0;
+   
 
  }
 
  .hero {
     width: 80%;
     margin: auto;
+    max-width: 1440px;
  }
 
  .container {
     width: 60%;
     margin: auto;
+    max-width: 1260px;
  }
 
  /* debug */
  .debug header{
     height: 100px;
     background-color: red;
+    
  }
 
 
@@ -41,10 +46,19 @@
     height: 200px;
     background-color: var(--var-lightblue);
     border: 1px solid black;
+    padding: 1rem;
+ }
+
+ .debug .tall {
+    height: 400px;
  }
 
 
  /*columns */
+
+ .col-2 {
+    width: calc((100%/12)*2);
+ }
 
  .col-4 {
     width: calc((100%/12)*4);
@@ -54,3 +68,26 @@
  .col-8 {
     width: calc((100%/12)*8);
  }
+
+ .col-12 {
+    width: 100%;
+ }
+
+
+ /* Utility */
+
+ .space-between {
+    justify-content: space-between;
+ }
+
+ /* #region header */
+ /* #endregion header */
+
+ /* #region hero */
+ /* #endregion hero */
+
+ /* #region main */
+
+/* #endregion main */   
+
+
