@@ -26,8 +26,16 @@ a {
  }
 
 
+
+
  ul {
     list-style: none;
+ }
+
+ h1.subtitle {
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
  }
 
 
@@ -57,6 +65,8 @@ a {
     padding: 1rem 0;
    
  }
+
+ 
 
  /*#region debug */
  .debug header{
@@ -183,6 +193,10 @@ a {
     text-align: center;
  }
 
+ .pa-1 {
+    padding: 1rem;
+ }
+
 
  /* #endregion Utility */
 
@@ -197,6 +211,7 @@ a {
     color: white;
  }
 .button.white a {
+    background-color: white;
     color: black;
     border: 1px solid black;
  }
@@ -214,6 +229,11 @@ a {
 .button.blue a:hover {
     opacity: 0.75;
     transition: opacity 0.3s ease;
+}
+
+.button.white a:hover{
+    box-shadow:  0 0 3px 3px grey;
+    transition: box-shadow 0.3s ease;
 }
 
 
@@ -276,11 +296,7 @@ a {
 
 
 
- .subtitle.business {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
- }
-
+ 
  .plan {
     border: 1px solid black;
     margin-bottom: 3rem;
@@ -337,6 +353,10 @@ a {
 
  .border-bottom a {
     margin-left: 0.5rem;
+    
+ }
+ 
+ .blue_underline {
     color: blue;
     text-decoration: underline;
  }
@@ -372,8 +392,12 @@ a {
 }
 
 
-.business > * {
+.partner > * {
     padding: 2rem;
+}
+
+.business h2 {
+    padding-bottom: 2rem;
 }
 
  .flex_item {
@@ -382,8 +406,30 @@ a {
     
  }
 
+ .boh {
+    width: 100%;
+    padding-top: 100%;
+ }
+
+ .flex_item{
+   background-color: blue;
+   
+}
+
+
+
+    
+    
+
 .flex_center, .flex_start, .flex_end {
     width: calc(100%/3);
+}
+
+
+.company.subtitle {
+    padding-bottom: 6rem;
+    flex-basis: 60%;
+    color: var(--var-dropbox_company);
 }
 
 
