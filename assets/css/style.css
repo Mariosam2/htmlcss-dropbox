@@ -53,6 +53,21 @@
     height: 400px;
  }
 
+ .debug .flex_item, .debug .flex_center {
+    background-color: var(--var-lightblue);
+    border: 1px solid black;
+    padding: 1rem;
+ }
+
+ .debug .flex_item {
+    height: 200px;
+ }
+
+ .debug .flex_center {
+    height: 400px;
+   
+ }
+
 
  /*columns */
 
@@ -76,8 +91,12 @@
 
  /* Utility */
 
- .space-between {
-    justify-content: space-between;
+ .d-flex {
+    display: flex;
+ }
+
+ .wrap {
+    flex-wrap: wrap;
  }
 
  /* #region header */
@@ -87,6 +106,14 @@
  /* #endregion hero */
 
  /* #region main */
+ .flex_item {
+    width: 50%;
+ }
+
+.flex_center, .flex_start, .flex_end {
+    width: calc(100%/3);
+}
+
 
 /* #endregion main */   
 
