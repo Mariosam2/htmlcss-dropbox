@@ -17,8 +17,6 @@
  .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem 0;
-   
 
  }
 
@@ -34,6 +32,11 @@
     max-width: 1260px;
  }
 
+ .container .row {
+    padding: 1rem 0;
+   
+ }
+
  /* debug */
  .debug header{
     height: 100px;
@@ -46,7 +49,7 @@
     height: 200px;
     background-color: var(--var-lightblue);
     border: 1px solid black;
-    padding: 1rem;
+    
  }
 
  .debug .tall {
@@ -56,16 +59,25 @@
  .debug .flex_item, .debug .flex_center {
     background-color: var(--var-lightblue);
     border: 1px solid black;
-    padding: 1rem;
+    
  }
 
  .debug .flex_item {
     height: 200px;
  }
 
- .debug .flex_center {
-    height: 400px;
-   
+
+
+ .debug .company{
+    background-color: var(--var-dropbox_company);
+    height: 300px;
+    border: 1px solid red;
+ }
+
+ .debug footer {
+    background-color: black;
+    height: 300px;
+
  }
 
 
@@ -95,6 +107,10 @@
     display: flex;
  }
 
+ .space-between {
+    justify-content: space-between;
+ }
+
  .wrap {
     flex-wrap: wrap;
  }
@@ -108,6 +124,8 @@
  /* #region main */
  .flex_item {
     width: 50%;
+    padding-top: 50%;
+    
  }
 
 .flex_center, .flex_start, .flex_end {
@@ -115,6 +133,14 @@
 }
 
 
+
+
 /* #endregion main */   
 
+/* #region footer */
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+/* #endregion footer */
 
