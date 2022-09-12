@@ -217,6 +217,7 @@ a {
     font-size: 3rem;
     font-weight: 700;
     padding: 3rem 0;
+    letter-spacing: 0.3rem;
  }
 
  .jumbo-text {
@@ -224,9 +225,13 @@ a {
     font-weight: 300;
  }
 
+ .jumbo_img{
+    height: 550px;
+    
+ }
+
  .jumbo_img img {
-    
-    
+    max-width: 120%;
  }
 
 
