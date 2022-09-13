@@ -6,6 +6,9 @@
     --shadow-designit: #D1E9CD;
     --bg-uof: #0093CE;
     --bg-topss-wbr: #FF1C1C;
+    --bg-lonelyplanet: #0D2481;
+    --bg-clearchannel: #FFD830;
+    --bg-des-center: #F5F5F5;
 }
 
 
@@ -180,6 +183,8 @@ a {
  .space-around {
     justify-content: space-around;
  }
+
+
 
  .pb-6 {
     padding-bottom: 6rem;
@@ -405,9 +410,8 @@ a {
 }
 
 
- .boh {
-    width: 100%;
-    padding-top: 100%;
+ .teams {
+   margin-top: 10rem;
  }
 
  .flex_item{
@@ -438,9 +442,32 @@ a {
    width: 60%;
 }
 
-.flex_item.topps {
+.flex_item.topps, .flex_item.wbr {
    background-color: var(--bg-topss-wbr)
 }
+
+.flex_item.hearst {
+   background-color: var(--var-lightblue);
+}
+
+.flex_item.lonely_planet {
+   background-color: var(--bg-lonelyplanet);
+}
+
+.flex_item.clear_channel {
+   background-color: var(--bg-clearchannel);
+}
+
+.flex_center {
+   background-color: var(--bg-des-center);
+   padding: 2rem;
+}
+
+.flex_center .img svg {
+   max-width: 50%;
+   
+}
+
 
 
     
