@@ -1,0 +1,596 @@
+:root {
+    --var-lightblue: #B4D0E7;
+    --var-blue: #0061FF;
+    --var-dropbox_company: #61082B;
+    --bg-designit: #A2D39B;
+    --shadow-designit: #D1E9CD;
+    --bg-uof: #0093CE;
+    --bg-topss-wbr: #FF1C1C;
+    --bg-lonelyplanet: #0D2481;
+    --bg-clearchannel: #FFD830;
+    --bg-des-center: #F5F5F5;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+ }
+
+img {
+    max-width: 100%;
+    height: auto;
+ }
+
+a {
+    text-decoration: none;
+    color: black;
+    
+ }
+
+
+
+
+ ul {
+    list-style: none;
+ }
+
+ h1.subtitle {
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+ }
+ h2.subtitle {
+   padding: 2rem 0;
+ }
+
+
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+
+ .container {
+    width: 80%;
+    margin: auto;
+    max-width: 1440px;
+ }
+
+ .container-sm {
+    width: 60%;
+    margin: auto;
+    max-width: 1260px;
+ }
+
+ .container .row, .container-sm .row{
+    margin-bottom: 5rem;
+ }
+
+ .container-sm .row {
+    padding: 1rem 0;
+   
+ }
+
+ 
+
+ /*#region debug */
+ .debug header{
+    height: 100px;
+    background-color: red;
+    
+ }
+
+
+ .debug [class*="col-"]{
+    height: 200px;
+    background-color: var(--var-lightblue);
+    border: 1px solid black;
+    
+ }
+
+ .debug .tall {
+    height: 400px;
+ }
+
+ .debug .flex_item, .debug .flex_center {
+    background-color: var(--var-lightblue);
+    border: 1px solid black;
+    
+ }
+
+ .debug .flex_item {
+    height: 200px;
+ }
+
+
+
+ .debug .company{
+    background-color: var(--var-dropbox_company);
+    height: 300px;
+    border: 1px solid red;
+ }
+
+ .debug footer {
+    background-color: black;
+    height: 300px;
+
+ }
+/*#endregion debug*/
+
+ /*#region columns */
+
+ 
+ .col-4 {
+    width: calc((100%/12)*4);
+ }
+
+
+ .col-4.plan {
+    width: 30%;
+ }
+
+
+ .col-8 {
+    width: calc((100%/12)*8);
+ }
+
+ .flex_footer_item {
+   width: calc(100%/5);
+   padding: 0 1rem;
+ }
+
+ .col-12 {
+    width: 100%;
+ }
+
+ /* #endregion columns */
+
+
+ /* #region utility */
+
+.inline-block {
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+}
+
+ .d-flex {
+    display: flex;
+ }
+
+ .center {
+    justify-content: center;
+ }
+
+ .column {
+    flex-direction: column;
+ }
+
+ .space-between {
+    justify-content: space-between;
+ }
+
+ .space-around {
+    justify-content: space-around;
+ }
+
+
+
+ .pb-6 {
+    padding-bottom: 6rem;
+ }
+
+ .align-center {
+    align-items: center;
+ }
+
+ .wrap {
+    flex-wrap: wrap;
+ }
+
+ .text-center {
+    text-align: center;
+ }
+
+ .pa-1 {
+    padding: 1rem;
+ }
+
+
+ /* #endregion Utility */
+
+ /*#region buttons */
+
+.button  a{
+    padding: 0.8rem 1.2rem;
+}
+
+ .button.blue a {
+    background-color: var(--var-blue);
+    color: white;
+ }
+.button.white a {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+ }
+
+ .button.small a {
+    padding: 0.5rem 1rem;
+
+}
+
+.button.large a {
+    width: 100%;
+    text-align: center;
+}
+
+.button.blue a:hover {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.button.white a:hover{
+    box-shadow:  0 0 3px 3px grey;
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+ /*#endregion buttons */
+
+ /* #region header */
+.flex_container ul li, .login, .signup{
+    padding:  2rem 1rem;
+    background-color: white;
+    
+    
+    
+}
+
+.flex_container ul li {
+   transition: all 0.3s ease;
+   text-align: center;
+}
+
+
+.flex_container ul li:hover, .login:hover {
+    /*border-bottom: 4px solid black;*/
+    cursor: pointer;
+    filter: brightness(95%);
+   
+   
+    
+}
+
+.logo {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown {
+   z-index: 3;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 10vw;
+   width: 100%;
+   left: 0;
+   top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+   
+}
+
+
+ /* #endregion header */
+
+
+ /* #region main */
+ .bg_secondary{
+    background-color: var(--var-lightblue);
+ }
+
+ .row.relative {
+    bottom: -5.5rem;
+ }
+
+ .title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+   
+ }
+
+ .jumbo-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+ }
+
+ .jumbo_img{
+    height: 550px;
+    
+ }
+
+
+
+
+ .arrow {
+    font-size: 3rem;
+ }
+
+
+
+ 
+ .plan {
+    border: 1px solid black;
+    margin-bottom: 3rem;
+    
+    
+ }
+
+ .plan i {
+    padding-right: 0.3rem;
+ }
+
+
+ .user{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.5rem;
+    
+ }
+
+.content {
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+ .content > * {
+    padding: 1rem 0;
+ }
+.highlights {
+    padding-top: 3rem;
+}
+
+
+ 
+
+ .month {
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    color: grey;
+    
+ }
+
+ .content .button {
+    padding-top: 3rem;
+ }
+
+ .border-bottom, .border-bottom span {
+    padding: 2rem 0 3rem 0rem;
+ }
+
+
+ .border-bottom span {
+    border-bottom: 1px solid grey;
+ }
+
+ .border-bottom a {
+    margin-left: 0.5rem;
+    
+ }
+ 
+ .blue_underline {
+    color: blue;
+    text-decoration: underline;
+ }
+
+ .fa-check {
+    color: var(--var-blue);
+    font-weight: 800;
+ }
+
+ .col-12 .flex_left {
+    flex-basis: 80%;
+ }
+
+ .col-12 .flex_right {
+    flex-grow: 1;
+ }
+
+ .col-12.plan .content {
+    padding: 2rem;
+ }
+
+.flex_left h3 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.flex_right {
+    justify-content: flex-start;
+}
+
+.flex_right .button.large {
+    padding-top: 0;
+}
+
+
+.partner > * {
+    padding: 2rem;
+}
+
+.business h2 {
+    padding-bottom: 2rem;
+}
+
+
+ .teams {
+   margin-top: 10rem;
+ }
+
+ .flex_item{
+   aspect-ratio: 1/1;
+   width: 50%;
+    
+}
+
+.flex_item svg{
+   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(141deg) brightness(109%) contrast(101%);
+   width: 50%;
+}
+
+.flex_item.designit {
+    background-color: var(--bg-designit);
+    box-shadow: inset 0 0 0 15px var(--shadow-designit);
+}
+
+.flex_item.asu {
+   background-color: var(--var-dropbox_company);
+}
+
+.flex_item.uof {
+   background-color: var(--bg-uof);
+}
+
+.flex_item.uof svg{
+   width: 60%;
+}
+
+.flex_item.topps, .flex_item.wbr {
+   background-color: var(--bg-topss-wbr)
+}
+
+.flex_item.hearst {
+   background-color: var(--var-lightblue);
+}
+
+.flex_item.lonely_planet {
+   background-color: var(--bg-lonelyplanet);
+}
+
+.flex_item.clear_channel {
+   background-color: var(--bg-clearchannel);
+}
+
+.flex_center {
+   background-color: var(--bg-des-center);
+   padding: 3rem;
+}
+
+.flex_center .img svg {
+   max-width: 50%;
+   
+}
+
+.breakline {
+   width: 20%;
+   margin: 2rem 0 3rem 0;
+}
+
+.flex_center p {
+   margin-bottom: 3rem;
+}
+
+    
+    
+
+.flex_center, .flex_start, .flex_end {
+    width: calc(100%/3);
+}
+
+
+.company.subtitle {
+    padding-bottom: 6rem;
+    flex-basis: 60%;
+    color: var(--var-dropbox_company);
+}
+
+.qna .col-12 {
+   padding: 3rem 0;
+   
+}
+
+.qna .col-12 h3 {
+   flex-basis: 80%;
+}
+
+.qna .col-12 i {
+   padding: 0 3rem;
+   
+}
+
+.qna .col-12 p {
+   padding: 2rem 0;
+   display: none;
+
+   
+}
+
+.qna .col-12:hover p{
+   display: block;
+   
+   
+}
+
+
+
+.qna .col-12.border-top-bottom { 
+   border-color: black;
+   border-style: solid none solid none;
+   border-width: 1px 0 1px 0;
+   
+}
+
+
+
+
+/* #endregion main */   
+
+/* #region footer */
+footer {
+   margin-top: 10rem;
+   padding: 2rem 0;
+   background-color: black;    
+   color: white;
+}
+
+.flex_footer_item li, footer span {
+   padding: 0.8rem 0;
+   font-weight: 300;
+}
+
+.flex_footer_item li a {
+   color: white;
+}
+
+footer .breakline {
+   width: 10%;
+}
+
+footer span {
+   color: grey;
+   
+}
+footer span i {
+   padding: 0 0.5rem;
+   
+}
+
+footer span .fa-caret-up {
+   vertical-align: middle;
+   
+}
+/* #endregion footer */
+
