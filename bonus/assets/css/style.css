@@ -329,6 +329,30 @@ a {
     font-size: 3rem;
  }
 
+ 
+ .checkbox_circle {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border: 2px solid grey;
+   border-radius: 50%;
+ 
+ }
+
+ .checkbox_circle, .billing {
+   vertical-align: middle;
+   margin: 2rem 0.5rem 2rem 0;
+ }
+
+ .checkbox_circle:active {
+   border: 5px solid var(--var-blue);
+ }
+
+ .billing {
+   margin-right: 1rem;
+ }
+
+
 
 
  
