@@ -460,7 +460,7 @@ a {
 
 .flex_center {
    background-color: var(--bg-des-center);
-   padding: 2rem;
+   padding: 3rem;
 }
 
 .flex_center .img svg {
@@ -468,7 +468,14 @@ a {
    
 }
 
+.flex_center hr {
+   width: 20%;
+   margin: 2rem 0 3rem 0;
+}
 
+.flex_center p {
+   margin-bottom: 3rem;
+}
 
     
     
@@ -482,6 +489,21 @@ a {
     padding-bottom: 6rem;
     flex-basis: 60%;
     color: var(--var-dropbox_company);
+}
+
+.qna .col-12 {
+   padding: 3rem 0;
+}
+
+.qna .col-12 i {
+   padding: 0 3rem;
+}
+
+.qna .col-12.border { 
+   border-color: black;
+   border-style: solid none solid none;
+   border-width: 1px 0 1px 0;
+   
 }
 
 
