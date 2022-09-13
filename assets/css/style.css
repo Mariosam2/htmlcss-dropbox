@@ -521,6 +521,10 @@ footer {
    font-weight: 300;
 }
 
+.flex_footer_item li a {
+   color: white;
+}
+
 footer .breakline {
    width: 10%;
 }
