@@ -44,6 +44,9 @@ a {
     padding-bottom: 3rem;
     padding-top: 6rem;
  }
+ h2.subtitle {
+   padding: 2rem 0;
+ }
 
 
  .row {
@@ -64,7 +67,7 @@ a {
     max-width: 1260px;
  }
 
- .container .row, .container-sm .row {
+ .container .row, .container-sm .row{
     margin-bottom: 5rem;
  }
 
@@ -121,14 +124,7 @@ a {
 
  /*#region columns */
 
- .col-2 {
-    width: calc((100%/12)*2);
- }
-
- .col-3 {
-    width: calc((100%/12)*3);
- }
-
+ 
  .col-4 {
     width: calc((100%/12)*4);
  }
@@ -143,8 +139,9 @@ a {
     width: calc((100%/12)*8);
  }
 
- .col-9 {
-    width: calc((100%/12)*9);
+ .flex_footer_item {
+   width: calc(100%/5);
+   padding: 0 1rem;
  }
 
  .col-12 {
@@ -251,7 +248,7 @@ a {
 
  /* #region header */
 .flex_container ul li, .login, .signup{
-    padding: 1rem;
+    padding:  2rem 1rem;
 }
 
 
@@ -468,7 +465,7 @@ a {
    
 }
 
-.flex_center hr {
+.breakline {
    width: 20%;
    margin: 2rem 0 3rem 0;
 }
@@ -499,7 +496,7 @@ a {
    padding: 0 3rem;
 }
 
-.qna .col-12.border { 
+.qna .col-12.border-top-bottom { 
    border-color: black;
    border-style: solid none solid none;
    border-width: 1px 0 1px 0;
@@ -513,8 +510,33 @@ a {
 
 /* #region footer */
 footer {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+   margin-top: 10rem;
+   padding: 2rem 0;
+   background-color: black;    
+   color: white;
+}
+
+.flex_footer_item li, footer span {
+   padding: 0.8rem 0;
+   font-weight: 300;
+}
+
+footer .breakline {
+   width: 10%;
+}
+
+footer span {
+   color: grey;
+   
+}
+footer span i {
+   padding: 0 0.5rem;
+   
+}
+
+footer span .fa-caret-up {
+   vertical-align: middle;
+   
 }
 /* #endregion footer */
 
