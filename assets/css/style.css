@@ -412,7 +412,12 @@ a {
  }
 
  .flex_item{
-   background-color: blue;
+  background-color: white;
+  -webkit-mask-image: url(../img/designit.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 50%;
+  -webkit-mask-position: center;
    
 }
 
