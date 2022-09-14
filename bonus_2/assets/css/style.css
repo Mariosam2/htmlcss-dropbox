@@ -6,6 +6,8 @@
     --var-grey: #637381;
     --bg-hero_home: #ffe7aa;
     --var-yellow: #e6c87f;
+    --item-orange: #f4b71f;
+    --item-red: #ffafa2;
     --var-green: #127024;
     --text-hero_2: #005744;
     --bg-hero_2: #ffcb95;
@@ -66,6 +68,12 @@ a {
    cursor: pointer;
  }
 
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 5rem 0;
+ }
+
 
 
  /* #region utility */
@@ -98,9 +106,17 @@ a {
     justify-content: space-around;
  }
 
+ .flex-end {
+   justify-content: flex-end;
+ }
+
 
  .align-center {
     align-items: center;
+ }
+
+ .grow-1 {
+      flex-grow: 1;
  }
 
  .wrap {
@@ -115,13 +131,24 @@ a {
    padding: 1rem;
  }
 
+ .pa-2 {
+   padding: 2rem;
+ }
+
  .p-top-bottom-2 {
    padding: 2rem 0;
+ }
+
+
+ .p-top-bottom-1 {
+   padding: 1rem 0;
  }
 
  .mb-2 {
    margin-bottom: 2rem;
  }
+
+ 
 
 
  /* #endregion Utility */
@@ -177,11 +204,20 @@ a {
    width: 100%;
 }
 
+.col-5 {
+   width: calc((100% / 12) * 5);
+}
+
+.col-7{
+   width: calc((100% / 12) * 7);
+}
+
 
 /*#endregion columns */
 
 
 /* #region  header */
+
 
 .flex_container ul li, .login, .signup{
     padding:  2rem 1rem;
@@ -192,7 +228,6 @@ a {
 }
 
 .flex_container ul li {
-   transition: all 0.1s ease;
    text-align: center;
 }
 
@@ -226,6 +261,7 @@ a {
    display: block;
    
 }
+
 
 
 /* #endregion */
@@ -271,5 +307,76 @@ a {
    color: var(--var-grey);
 }
 
+
+.principal_articles .item {
+   width: 100%;
+   border: 1px solid lightgray;
+   margin-bottom: 2rem;
+}
+
+.item.orange {
+   border-top: 5px solid var(--item-orange)
+}
+
+.item.blue {
+   border-top: 5px solid var(--var-lightblue);
+}
+
+.item.red {
+   border-top: 5px solid var(--item-red);
+}
+
+.item .img {
+   flex-basis: 15%;
+}
+
+.item .content {
+   flex-basis: 80%;
+   
+  
+}
+
+.item .content h4 {
+   padding-bottom: 0.5rem;
+}
+
+.item .content .support_tools {
+   padding-bottom: 1rem;
+}
+
+.item hr {
+   margin: 0.5rem 0;
+   border-color: lightgray;
+   width: 20%;
+}
+
+.item .question {
+   color: var(--var-grey);
+}
+
+.principal {
+   border-top: 1px solid lightgray;
+   border-bottom: 1px solid lightgray;
+   padding: 1.5rem 0;
+}
+
+.principal p {
+   flex-basis: 60%;
+   padding-right: 3rem;
+}
+
+.principal .box {
+   flex-basis: 20%;
+   text-align: center;
+}
+
+.principal .box a {
+   border: 1px solid black;
+   padding: 0 0.5rem;
+}
+
+.principal img {
+   max-width: 80%;
+}
 
 /* #endregion */
