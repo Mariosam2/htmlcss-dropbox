@@ -1,5 +1,14 @@
 :root {
     --var-blue: #0061FF;
+    --var-lightblue: #a0b7ff;
+    --var-red: #9b0033;
+    --var-purple: #7e3af2;
+    --var-grey: #637381;
+    --bg-hero_home: #ffe7aa;
+    --var-yellow: #e6c87f;
+    --var-green: #127024;
+    --text-hero_2: #005744;
+    --bg-hero_2: #ffcb95;
 }
 
 
@@ -27,6 +36,34 @@ a {
 
  ul {
     list-style: none;
+ }
+
+
+ h1 {
+   font-size: 60px;
+   line-height: 61px;
+ }
+
+ h2 {
+   font-size: 32px;
+   line-height: 1.18;
+ }
+
+ h3 {
+   font-size: 25px;
+   line-height: 1.28;
+   font-weight: 500;
+ }
+
+ .container {
+   width: 80%;
+   margin: auto;
+   max-width: 1080px;
+
+ }
+
+ i:hover {
+   cursor: pointer;
  }
 
 
@@ -75,7 +112,15 @@ a {
  }
 
  .pa-1 {
-    padding: 1rem;
+   padding: 1rem;
+ }
+
+ .p-top-bottom-2 {
+   padding: 2rem 0;
+ }
+
+ .mb-2 {
+   margin-bottom: 2rem;
  }
 
 
@@ -122,7 +167,22 @@ a {
 
  /*#endregion buttons */
 
-/* #region  Header */
+/*#region columns */
+
+.col-4 {
+   width: calc((100% / 12) * 4);
+}
+
+.col-12 {
+   width: 100%;
+}
+
+
+/*#endregion columns */
+
+
+/* #region  header */
+
 .flex_container ul li, .login, .signup{
     padding:  2rem 1rem;
     background-color: white;
@@ -132,13 +192,12 @@ a {
 }
 
 .flex_container ul li {
-   transition: all 0.3s ease;
+   transition: all 0.1s ease;
    text-align: center;
 }
 
 
 .flex_container ul li:hover, .login:hover {
-    /*border-bottom: 4px solid black;*/
     cursor: pointer;
     filter: brightness(95%);
    
@@ -167,5 +226,50 @@ a {
    display: block;
    
 }
+
+
+/* #endregion */
+
+/* #region main */
+
+.jumbotron {
+   background-image: url(../img/hero_home.webp);
+   background-size: 50%;
+   background-position: right;
+   background-repeat: no-repeat;
+   background-color: var(--bg-hero_home);
+   padding: 2rem 0;
+   margin-bottom: 2rem;
+}
+
+
+.searchbar {
+   border: 2px solid var(--var-purple);
+   background-color: white;
+   transition: border 0.3s ease;
+}
+
+
+.searchbar input {
+   flex-basis: 95%;
+   border: none;
+   
+   
+}
+
+.searchbar input:focus-visible {
+   outline: none;
+}
+
+
+.searchbar:hover{
+   border-color: black;
+
+}
+
+.searchbar i {
+   color: var(--var-grey);
+}
+
 
 /* #endregion */
