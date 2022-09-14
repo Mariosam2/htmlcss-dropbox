@@ -1,0 +1,171 @@
+:root {
+    --var-blue: #0061FF;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+ }
+
+a {
+    text-decoration: none;
+    color: black;
+    
+ }
+
+
+ ul {
+    list-style: none;
+ }
+
+
+
+ /* #region utility */
+
+ .inline-block {
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+}
+
+ .d-flex {
+    display: flex;
+ }
+
+ .center {
+    justify-content: center;
+ }
+
+ .column {
+    flex-direction: column;
+ }
+
+ .space-between {
+    justify-content: space-between;
+ }
+
+ .space-around {
+    justify-content: space-around;
+ }
+
+
+ .align-center {
+    align-items: center;
+ }
+
+ .wrap {
+    flex-wrap: wrap;
+ }
+
+ .text-center {
+    text-align: center;
+ }
+
+ .pa-1 {
+    padding: 1rem;
+ }
+
+
+ /* #endregion Utility */
+
+
+ /*#region buttons */
+
+.button  a{
+    padding: 0.8rem 1.2rem;
+}
+
+ .button.blue a {
+    background-color: var(--var-blue);
+    color: white;
+ }
+.button.white a {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+ }
+
+ .button.small a {
+    padding: 0.5rem 1rem;
+
+}
+
+.button.large a {
+    width: 100%;
+    text-align: center;
+}
+
+.button.blue a:hover {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.button.white a:hover{
+    box-shadow:  0 0 3px 3px grey;
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+ /*#endregion buttons */
+
+/* #region  Header */
+.flex_container ul li, .login, .signup{
+    padding:  2rem 1rem;
+    background-color: white;
+    
+    
+    
+}
+
+.flex_container ul li {
+   transition: all 0.3s ease;
+   text-align: center;
+}
+
+
+.flex_container ul li:hover, .login:hover {
+    /*border-bottom: 4px solid black;*/
+    cursor: pointer;
+    filter: brightness(95%);
+   
+   
+    
+}
+
+.logo {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown {
+   z-index: 3;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 10vw;
+   width: 100%;
+   left: 0;
+   top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+   
+}
+
+/* #endregion */
