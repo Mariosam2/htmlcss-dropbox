@@ -177,7 +177,8 @@ a {
 .button.white a {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 1px solid lightgray;
+    
  }
 
  .button.small a {
@@ -365,7 +366,7 @@ a {
 }
 
 .articles {
-   padding: 0 2rem;
+   padding-left: 3rem;
 
 }
 
@@ -374,49 +375,125 @@ a {
 }
 
 
-.principal {
+.popular {
    padding: 1.5rem 0;
 }
 
-.principal:hover img {
+.popular:hover img {
    right: 20px
 }
 
-.principal:hover {
+.popular:hover {
    text-decoration: underline;
 }
 
 
-
-
-.principal p {
-   flex-basis: 60%;
-   padding-right: 3rem;
+.popular p {
+   flex-basis: 65%;
+   margin-right: 2rem;
 }
 
-.principal .box {
+.popular .box {
    flex-basis: 20%;
    text-align: center;
 }
 
-.principal .box a {
+.popular .box a {
    border: 1px solid lightgrey;
    padding: 0.5rem;
-   font-size: 0.8rem;
+   font-size: 0.7rem;
 }
 
-.principal.relative.d-flex {
-   
-}
 
-.principal img {
+.popular img {
    right: 0;
    translate: 0 -50%;
-   max-width: 80%;
+   max-width: 40%;
    position: absolute;
    transition: right 0.5s ease;
 }
 
 
+.new_user {
+   background-color: var(--item-orange);
+}
+
+.new_user .row {
+   padding-top: 2rem;
+}
+
+.text-right {
+   text-align: right;
+   font-size: 46px;
+   line-height: 1.20;
+   color: var(--item-orange);
+   background-color: var(--var-green);
+}
+
+
+
+.guides h3 {
+   color: var(--var-green);
+   margin-bottom: 3rem;
+   text-align: center;
+}
+
+.account_billing .content {
+   width: 80%;
+}
+
+.files_n_folders {
+   background-color: whitesmoke;
+}
+
+.files_n_folders .row {
+   padding-top: 5rem;
+}
+
+
+
 
 /* #endregion */
+
+
+
+
+
+/* #region footer */
+footer {
+   margin-top: 10rem;
+   padding: 2rem 0;
+   background-color: black;    
+   color: white;
+}
+
+.flex_footer_item li, footer span {
+   padding: 0.8rem 0;
+   font-weight: 300;
+   font-size: 0.8rem;
+}
+
+.flex_footer_item li a {
+   color: white;
+}
+
+footer .breakline {
+   width: 10%;
+}
+
+footer span {
+   color: grey;
+   
+   
+}
+footer span i {
+   padding: 0 0.5rem;
+   
+}
+
+footer span .fa-caret-up {
+   vertical-align: middle;
+   
+}
+/* #endregion footer */
+
